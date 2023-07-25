@@ -27,8 +27,8 @@ const handleSubmit = async (e) => {
 }
     return ( 
         <div className="auth">
-            <h1>Register</h1>
             <form>
+                <h1>Register</h1>
                 <input required type="text" placeholder="Full Name" name="fullName" onChange={handleChange} />
                 <input required type="email" placeholder="Email" name="email" onChange={handleChange} />
                 <input required type="text" placeholder="Phone Number" name="phoneNumber" onChange={handleChange} />

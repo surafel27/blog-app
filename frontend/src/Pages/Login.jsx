@@ -28,8 +28,8 @@ const handleSubmit = async (e) => {
 }
     return ( 
         <div className="auth">
-            <h1>Login</h1>
             <form>
+                <h1>Login</h1>
                 <input type="text" placeholder="email" name="email" onChange={handleChange} />
                 <input type="password" placeholder="password" name="password" onChange={handleChange}/>
                 <button onClick={handleSubmit}>Login</button>

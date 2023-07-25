@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider, Route, Outlet } from "react-router
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Write from "./Pages/Write";
-import Single from "./Pages/single";
+import Single from "./Pages/Single";
 import Home from "./Pages/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";

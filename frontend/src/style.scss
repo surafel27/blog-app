@@ -10,29 +10,32 @@ $lightGreen: #b9e7e7;
       text-decoration: none;
       color: inherit;
     }
-    //LOGIN & REGISTER
 
+    //LOGIN & REGISTER
     .auth {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      background-color: $lightGreen;
-
-      h1 {
-        font-size: 20px;
-        color: teal;
-        margin-bottom: 20px;
-      }
+      width: 100%;
+      height: 90vh;
 
       form {
         display: flex;
         flex-direction: column;
         padding: 50px;
         background-color: white;
-        width: 200px;
+        border-radius: 10px;
+        width: 300px;
         gap: 20px;
+        border: 1px solid teal;
+
+        h1 {
+          font-size: 20px;
+          color: rgb(2, 66, 66);
+          margin-bottom: 20px;
+          text-align: center;
+        }
 
         input {
           padding: 10px;
@@ -46,7 +49,11 @@ $lightGreen: #b9e7e7;
           background-color: teal;
           cursor: pointer;
           color: white;
+          border-radius: 10px;
         }
+        button:hover {
+          background-color: rgb(1, 185, 185);
+        } 
 
         p {
           font-size: 12px;
@@ -65,10 +72,14 @@ $lightGreen: #b9e7e7;
 
     .navbar {
       .container {
+        width: 1024px;
         padding: 10px 0px;
         display: flex;
         align-items: center;
+        position: fixed;
         justify-content: space-between;
+        background-color: white;
+        top: 0%;
         .logo {
           img {
             width: 120px;
@@ -77,19 +88,23 @@ $lightGreen: #b9e7e7;
         .links {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 20px;
 
           h6 {
             font-size: 16px;
             font-weight: 300;
+            &:hover {
+              color: teal;
+            }
           }
-
           span {
             cursor: pointer;
+            &:hover {
+              color: teal;
+            }
           }
 
           .write {
-            background-color: $lightGreen;
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -110,7 +125,6 @@ $lightGreen: #b9e7e7;
     }
 
     //FOOTER
-
     footer {
       margin-top: 100px;
       padding: 20px;
@@ -128,7 +142,7 @@ $lightGreen: #b9e7e7;
 
     .home {
       .posts {
-        margin-top: 50px;
+        margin-top: 120px;
         display: flex;
         flex-direction: column;
         gap: 150px;
@@ -144,12 +158,15 @@ $lightGreen: #b9e7e7;
           .img {
             flex: 2;
             position: relative;
+            border-radius: 10px;
+            z-index: -1;
 
             &::after {
               content: "";
               width: 100%;
               height: 100%;
               background-color: $lightGreen;
+              border-radius: 10px;
               position: absolute;
               top: 20px;
               left: -20px;
@@ -160,6 +177,7 @@ $lightGreen: #b9e7e7;
               width: 100%;
               max-height: 400px;
               object-fit: cover;
+              border-radius: 10px;
             }
           }
 
@@ -200,6 +218,7 @@ $lightGreen: #b9e7e7;
     //SINGLE
 
     .single {
+      margin-top: 120px;
       display: flex;
       gap: 50px;
 
@@ -301,7 +320,7 @@ $lightGreen: #b9e7e7;
     //WRITE
 
     .add {
-      margin-top: 20px;
+      margin-top: 120px;
       display: flex;
       gap: 20px;
 
@@ -327,7 +346,7 @@ $lightGreen: #b9e7e7;
           }
         }
       }
-
+//MENU FOR OTHER
       .menu {
         flex: 2;
         display: flex;

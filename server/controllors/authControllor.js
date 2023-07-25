@@ -52,8 +52,7 @@ export const login = (req, res) => {
         })
           .status(200)
           .json(other);
-    });
-    
+    });   
 };
 export const logout = (req, res) => {
     res.clearCookie("access_token", {
